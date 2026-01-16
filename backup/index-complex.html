@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="İstanbul'un en prestijli güzellik merkezi. Profesyonel cilt bakımı, spa, masaj ve güzellik hizmetleri. Ücretsiz konsültasyon için hemen randevu alın.">
+    <meta name="keywords" content="güzellik merkezi, istanbul spa, cilt bakımı, lüks spa, masaj, manikür, hydrafacial">
+    <meta property="og:title" content="LUXE SPA | İstanbul'un Prestijli Güzellik Merkezi">
+    <meta property="og:description" content="Lüks güzellik deneyimi için İstanbul'un kalbinde sizleri bekliyoruz.">
+    <meta property="og:image" content="images/hero_main_1768504538756.png">
+    <meta name="theme-color" content="#1a1a1a">
+
+    <title>LUXE SPA | Premium Güzellik & Wellness Merkezi</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Libraries CSS -->
+    <link rel="stylesheet" href="libs/swiper.min.css">
+    <link rel="stylesheet" href="styles/premium.css">
+
+    <!-- Favicon SVG -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23D4AF37'/%3E%3Cstop offset='100%25' stop-color='%23F4D03F'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='45' fill='url(%23g)'/%3E%3Ctext x='50' y='65' font-family='serif' font-size='40' fill='%231a1a1a' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader__content">
+            <svg class="preloader__logo" viewBox="0 0 120 40" fill="none">
+                <text x="0" y="30" class="preloader-text">LUXE SPA</text>
+            </svg>
+            <div class="preloader__bar">
+                <div class="preloader__progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor">
+        <div class="cursor__dot"></div>
+        <div class="cursor__outline"></div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#" class="nav__logo">
+                <svg viewBox="0 0 140 40" class="logo-svg">
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#D4AF37" />
+                            <stop offset="50%" stop-color="#F4D03F" />
+                            <stop offset="100%" stop-color="#D4AF37" />
+                        </linearGradient>
+                    </defs>
+                    <text x="0" y="28" fill="url(#logoGrad)" class="logo-text-svg">LUXE SPA</text>
+                </svg>
+            </a>
+
+            <ul class="nav__menu" id="navMenu">
+                <li><a href="#services" class="nav__link" data-text="Hizmetler">Hizmetler</a></li>
+                <li><a href="#transformation" class="nav__link" data-text="Dönüşüm">Dönüşüm</a></li>
+                <li><a href="#team" class="nav__link" data-text="Ekibimiz">Ekibimiz</a></li>
+                <li><a href="#gallery" class="nav__link" data-text="Galeri">Galeri</a></li>
+                <li><a href="#testimonials" class="nav__link" data-text="Yorumlar">Yorumlar</a></li>
+                <li><a href="#pricing" class="nav__link" data-text="Fiyatlar">Fiyatlar</a></li>
+            </ul>
+
+            <div class="nav__actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Tema değiştir">
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5" />
+                        <path
+                            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                </button>
+                <a href="tel:+902123456789" class="nav__phone magnetic-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    <span>Ara</span>
+                </a>
+                <a href="#booking" class="nav__cta magnetic-btn">
+                    <span>Randevu Al</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+            <button class="nav__toggle" id="navToggle" aria-label="Menü">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Video -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <video autoplay muted loop playsinline class="hero__video" poster="images/hero_main_1768504538756.png">
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-relaxing-massage-with-oil-on-the-back-28292-large.mp4"
+                    type="video/mp4">
+            </video>
+            <div class="hero__overlay"></div>
+            <div class="hero__gradient-mesh"></div>
+        </div>
+
+        <div class="hero__content">
+            <div class="hero__badge reveal-fade">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <span>İstanbul'un 1 Numaralı Spa Deneyimi</span>
+            </div>
+
+            <h1 class="hero__title">
+                <span class="line"><span class="word">Lüks</span></span>
+                <span class="line"><span class="word">Güzellik</span> <span
+                        class="word highlight">Deneyimi</span></span>
+            </h1>
+
+            <p class="hero__subtitle reveal-fade">
+                Uzman ekibimiz ve son teknoloji ekipmanlarımızla, kendinizi yeniden keşfedin
+            </p>
+
+            <div class="hero__stats reveal-fade">
+                <div class="stat">
+                    <span class="stat__number" data-count="5000">0</span>
+                    <span class="stat__label">Mutlu Müşteri</span>
+                </div>
+                <div class="stat__divider"></div>
+                <div class="stat">
+                    <span class="stat__number" data-count="7">0</span>
+                    <span class="stat__plus">+</span>
+                    <span class="stat__label">Yıl Tecrübe</span>
+                </div>
+                <div class="stat__divider"></div>
+                <div class="stat">
+                    <span class="stat__number" data-count="4.9">0</span>
+                    <span class="stat__label">Google Puanı</span>
+                </div>
+            </div>
+
+            <div class="hero__cta reveal-fade">
+                <a href="#booking" class="btn btn--primary magnetic-btn">
+                    <span class="btn__text">Ücretsiz Konsültasyon</span>
+                    <span class="btn__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </span>
+                </a>
+                <a href="#services" class="btn btn--ghost magnetic-btn">
+                    <span class="btn__text">Hizmetleri Keşfet</span>
+                </a>
+            </div>
+
+            <div class="hero__trust reveal-fade">
+                <span class="trust-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                    %100 Memnuniyet
+                </span>
+                <span class="trust-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    İlk Seansta %20 İndirim
+                </span>
+            </div>
+        </div>
+
+        <div class="hero__scroll">
+            <span>Aşağı Kaydır</span>
+            <div class="scroll-line"></div>
+        </div>
+
+        <div class="hero__social">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path
+                        d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+                </svg></a>
+        </div>
+    </section>
+
+    <!-- Marquee Section -->
+    <section class="marquee-section">
+        <div class="marquee">
+            <div class="marquee__content">
+                <span>CİLT BAKIMI</span><span class="dot">◆</span>
+                <span>SAÇ TASARIMI</span><span class="dot">◆</span>
+                <span>MASAJ TERAPİSİ</span><span class="dot">◆</span>
+                <span>MANİKÜR & PEDİKÜR</span><span class="dot">◆</span>
+                <span>LAZER EPİLASYON</span><span class="dot">◆</span>
+                <span>PROFESYONEL MAKYAJ</span><span class="dot">◆</span>
+            </div>
+            <div class="marquee__content" aria-hidden="true">
+                <span>CİLT BAKIMI</span><span class="dot">◆</span>
+                <span>SAÇ TASARIMI</span><span class="dot">◆</span>
+                <span>MASAJ TERAPİSİ</span><span class="dot">◆</span>
+                <span>MANİKÜR & PEDİKÜR</span><span class="dot">◆</span>
+                <span>LAZER EPİLASYON</span><span class="dot">◆</span>
+                <span>PROFESYONEL MAKYAJ</span><span class="dot">◆</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <header class="section__header">
+                <span class="section__label reveal-fade">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                    </svg>
+                    Hizmetlerimiz
+                </span>
+                <h2 class="section__title split-text">Premium <span class="highlight">Bakım</span> Hizmetleri</h2>
+                <p class="section__desc reveal-fade">Uzman kadromuz ile size özel profesyonel bakım protokolleri</p>
+            </header>
+
+            <div class="services__grid">
+                <article class="service-card glass-card" data-tilt>
+                    <div class="service-card__image">
+                        <img src="images/cilt_bakimi_1768504552188.png" alt="Cilt Bakımı" loading="lazy">
+                        <div class="service-card__badge">En Popüler</div>
+                    </div>
+                    <div class="service-card__content">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 16v-4M12 8h.01" />
+                            </svg>
+                        </div>
+                        <h3>Cilt Bakımı</h3>
+                        <p>Hydrafacial, anti-aging, dermapen ve profesyonel cilt yenileme protokolleri</p>
+                        <div class="service-card__meta">
+                            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 6v6l4 2" />
+                                </svg> 60-90 dk</span>
+                            <span class="price">₺1.500'den</span>
+                        </div>
+                        <a href="#booking" class="service-card__cta magnetic-btn">
+                            <span>Randevu Al</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="service-card glass-card" data-tilt>
+                    <div class="service-card__image">
+                        <img src="images/sac_bakimi_1768504564934.png" alt="Saç Bakımı" loading="lazy">
+                    </div>
+                    <div class="service-card__content">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M6 2v20M18 2v20M6 12h12M6 7h12M6 17h12" />
+                            </svg>
+                        </div>
+                        <h3>Saç Tasarımı</h3>
+                        <p>Kesim, boyama, keratin bakım, balayage ve trend saç uygulamaları</p>
+                        <div class="service-card__meta">
+                            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 6v6l4 2" />
+                                </svg> 45-120 dk</span>
+                            <span class="price">₺800'den</span>
+                        </div>
+                        <a href="#booking" class="service-card__cta magnetic-btn">
+                            <span>Randevu Al</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="service-card glass-card" data-tilt>
+                    <div class="service-card__image">
+                        <img src="images/masaj_1768504594843.png" alt="Masaj Terapisi" loading="lazy">
+                    </div>
+                    <div class="service-card__content">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                            </svg>
+                        </div>
+                        <h3>Masaj Terapisi</h3>
+                        <p>Aromaterapi, sıcak taş, derin doku ve Thai masaj uygulamaları</p>
+                        <div class="service-card__meta">
+                            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 6v6l4 2" />
+                                </svg> 50-90 dk</span>
+                            <span class="price">₺900'den</span>
+                        </div>
+                        <a href="#booking" class="service-card__cta magnetic-btn">
+                            <span>Randevu Al</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="service-card glass-card" data-tilt>
+                    <div class="service-card__image">
+                        <img src="images/manikur_1768504579932.png" alt="Manikür" loading="lazy">
+                    </div>
+                    <div class="service-card__content">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                            </svg>
+                        </div>
+                        <h3>Manikür & Pedikür</h3>
+                        <p>Lüks tırnak bakımı, nail art, jel ve kalıcı oje uygulamaları</p>
+                        <div class="service-card__meta">
+                            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 6v6l4 2" />
+                                </svg> 45-60 dk</span>
+                            <span class="price">₺400'den</span>
+                        </div>
+                        <a href="#booking" class="service-card__cta magnetic-btn">
+                            <span>Randevu Al</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="service-card glass-card" data-tilt>
+                    <div class="service-card__image">
+                        <img src="images/makyaj_1768504610752.png" alt="Profesyonel Makyaj" loading="lazy">
+                    </div>
+                    <div class="service-card__content">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="3" />
+                                <path
+                                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                            </svg>
+                        </div>
+                        <h3>Profesyonel Makyaj</h3>
+                        <p>Gelin makyajı, özel gün ve editoryal makyaj uygulamaları</p>
+                        <div class="service-card__meta">
+                            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 6v6l4 2" />
+                                </svg> 60-90 dk</span>
+                            <span class="price">₺600'den</span>
+                        </div>
+                        <a href="#booking" class="service-card__cta magnetic-btn">
+                            <span>Randevu Al</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="service-card glass-card" data-tilt>
+                    <div class="service-card__image">
+                        <img src="images/epilasyon_1768504644798.png" alt="Lazer Epilasyon" loading="lazy">
+                    </div>
+                    <div class="service-card__content">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                            </svg>
+                        </div>
+                        <h3>Lazer Epilasyon</h3>
+                        <p>Soprano ICE Platinum ile ağrısız, kalıcı epilasyon teknolojisi</p>
+                        <div class="service-card__meta">
+                            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 6v6l4 2" />
+                                </svg> 30-60 dk</span>
+                            <span class="price">₺500'den</span>
+                        </div>
+                        <a href="#booking" class="service-card__cta magnetic-btn">
+                            <span>Randevu Al</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformation Before/After -->
+    <section class="section transformation" id="transformation">
+        <div class="container">
+            <header class="section__header">
+                <span class="section__label reveal-fade">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M23 4v6h-6M1 20v-6h6" />
+                        <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" />
+                    </svg>
+                    Gerçek Sonuçlar
+                </span>
+                <h2 class="section__title split-text">Müşterilerimizin <span class="highlight">Dönüşümü</span></h2>
+            </header>
+
+            <div class="transformation__slider swiper" id="transformationSlider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="comparison-slider" data-comparison>
+                            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&h=600&fit=crop"
+                                alt="Öncesi" class="comparison__before">
+                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&h=600&fit=crop"
+                                alt="Sonrası" class="comparison__after">
+                            <div class="comparison__handle">
+                                <div class="comparison__line"></div>
+                                <div class="comparison__button">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 8L22 12L18 16" />
+                                        <path d="M6 8L2 12L6 16" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <span class="comparison__label comparison__label--before">Öncesi</span>
+                            <span class="comparison__label comparison__label--after">Sonrası</span>
+                        </div>
+                        <p class="comparison__caption">Cilt Tonu Eşitleme - 4 Seans Sonucu</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comparison-slider" data-comparison>
+                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&h=600&fit=crop"
+                                alt="Öncesi" class="comparison__before">
+                            <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?w=800&h=600&fit=crop"
+                                alt="Sonrası" class="comparison__after">
+                            <div class="comparison__handle">
+                                <div class="comparison__line"></div>
+                                <div class="comparison__button">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 8L22 12L18 16" />
+                                        <path d="M6 8L2 12L6 16" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <span class="comparison__label comparison__label--before">Öncesi</span>
+                            <span class="comparison__label comparison__label--after">Sonrası</span>
+                        </div>
+                        <p class="comparison__caption">Saç Yenileme Terapisi - 3 Seans Sonucu</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section team" id="team">
+        <div class="container">
+            <header class="section__header">
+                <span class="section__label reveal-fade">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                    Uzman Kadro
+                </span>
+                <h2 class="section__title split-text">Profesyonel <span class="highlight">Ekibimiz</span></h2>
+                <p class="section__desc reveal-fade">Alanında sertifikalı, deneyimli güzellik uzmanları</p>
+            </header>
+
+            <div class="team__grid">
+                <article class="team-card" data-tilt data-tilt-scale="1.02">
+                    <div class="team-card__image">
+                        <img src="images/ekip_ayse_yilmaz_1768504660487.png" alt="Ayşe Yılmaz" loading="lazy">
+                        <div class="team-card__overlay">
+                            <div class="team-card__social">
+                                <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                    </svg></a>
+                                <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                        <rect x="2" y="9" width="4" height="12" />
+                                        <circle cx="4" cy="4" r="2" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card__info">
+                        <h3>Ayşe Yılmaz</h3>
+                        <span class="team-card__role">Cilt Uzmanı & Estetisyen</span>
+                        <p>12 yıllık tecrübe • 3000+ mutlu müşteri</p>
+                        <div class="team-card__badges">
+                            <span>CIBTAC</span>
+                            <span>Hydrafacial Expert</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="team-card" data-tilt data-tilt-scale="1.02">
+                    <div class="team-card__image">
+                        <img src="images/ekip_mehmet_can_1768504677270.png" alt="Mehmet Can" loading="lazy">
+                        <div class="team-card__overlay">
+                            <div class="team-card__social">
+                                <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                    </svg></a>
+                                <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                        <rect x="2" y="9" width="4" height="12" />
+                                        <circle cx="4" cy="4" r="2" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card__info">
+                        <h3>Mehmet Can</h3>
+                        <span class="team-card__role">Saç Stilisti & Tasarımcı</span>
+                        <p>Uluslararası ödüllü stilist</p>
+                        <div class="team-card__badges">
+                            <span>L'Oréal Pro</span>
+                            <span>Balayage Master</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="team-card" data-tilt data-tilt-scale="1.02">
+                    <div class="team-card__image">
+                        <img src="images/ekip_zeynep_kara_1768504690420.png" alt="Zeynep Kara" loading="lazy">
+                        <div class="team-card__overlay">
+                            <div class="team-card__social">
+                                <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                    </svg></a>
+                                <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                        <rect x="2" y="9" width="4" height="12" />
+                                        <circle cx="4" cy="4" r="2" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card__info">
+                        <h3>Zeynep Kara</h3>
+                        <span class="team-card__role">Masaj Terapisti</span>
+                        <p>Holistic wellness uzmanı</p>
+                        <div class="team-card__badges">
+                            <span>ITEC Diploma</span>
+                            <span>Thai Massage</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="team-card" data-tilt data-tilt-scale="1.02">
+                    <div class="team-card__image">
+                        <img src="images/ekip_elif_aksoy_1768504705433.png" alt="Elif Aksoy" loading="lazy">
+                        <div class="team-card__overlay">
+                            <div class="team-card__social">
+                                <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                    </svg></a>
+                                <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                        <rect x="2" y="9" width="4" height="12" />
+                                        <circle cx="4" cy="4" r="2" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card__info">
+                        <h3>Elif Aksoy</h3>
+                        <span class="team-card__role">Tırnak Teknisyeni</span>
+                        <p>Nail art & protez tırnak uzmanı</p>
+                        <div class="team-card__badges">
+                            <span>OPI Certified</span>
+                            <span>Gel Expert</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <header class="section__header">
+                <span class="section__label reveal-fade">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                        <circle cx="8.5" cy="8.5" r="1.5" />
+                        <polyline points="21 15 16 10 5 21" />
+                    </svg>
+                    Mekanımız
+                </span>
+                <h2 class="section__title split-text">Salon <span class="highlight">Galerimiz</span></h2>
+            </header>
+
+            <div class="gallery__grid">
+                <a href="images/galeri_resepsiyon_1768504838863.png" class="gallery__item gallery__item--large"
+                    data-lightbox>
+                    <img src="images/galeri_resepsiyon_1768504838863.png" alt="Resepsiyon" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Resepsiyon</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="M21 21l-4.35-4.35" />
+                            <path d="M11 8v6M8 11h6" />
+                        </svg>
+                    </div>
+                </a>
+                <a href="images/galeri_bekleme_1768504853321.png" class="gallery__item" data-lightbox>
+                    <img src="images/galeri_bekleme_1768504853321.png" alt="Bekleme Salonu" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Bekleme</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="M21 21l-4.35-4.35" />
+                            <path d="M11 8v6M8 11h6" />
+                        </svg>
+                    </div>
+                </a>
+                <a href="images/galeri_urunler_1768504867389.png" class="gallery__item" data-lightbox>
+                    <img src="images/galeri_urunler_1768504867389.png" alt="Premium Ürünler" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Ürünler</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="M21 21l-4.35-4.35" />
+                            <path d="M11 8v6M8 11h6" />
+                        </svg>
+                    </div>
+                </a>
+                <a href="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200"
+                    class="gallery__item gallery__item--tall" data-lightbox>
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=800&fit=crop"
+                        alt="Terapi Odası" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Terapi</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="M21 21l-4.35-4.35" />
+                            <path d="M11 8v6M8 11h6" />
+                        </svg>
+                    </div>
+                </a>
+                <a href="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=1200" class="gallery__item"
+                    data-lightbox>
+                    <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=600&h=400&fit=crop"
+                        alt="VIP Suite" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>VIP Suite</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="M21 21l-4.35-4.35" />
+                            <path d="M11 8v6M8 11h6" />
+                        </svg>
+                    </div>
+                </a>
+                <a href="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=1200" class="gallery__item"
+                    data-lightbox>
+                    <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=600&h=400&fit=crop"
+                        alt="Koridor" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Koridor</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="M21 21l-4.35-4.35" />
+                            <path d="M11 8v6M8 11h6" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox__close" aria-label="Kapat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+        </button>
+        <button class="lightbox__nav lightbox__nav--prev" aria-label="Önceki">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6" />
+            </svg>
+        </button>
+        <button class="lightbox__nav lightbox__nav--next" aria-label="Sonraki">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6" />
+            </svg>
+        </button>
+        <div class="lightbox__content">
+            <img src="" alt="" class="lightbox__image">
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <header class="section__header">
+                <span class="section__label reveal-fade">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                    </svg>
+                    Müşteri Yorumları
+                </span>
+                <h2 class="section__title split-text">Müşterilerimiz <span class="highlight">Ne Diyor?</span></h2>
+            </header>
+
+            <div class="testimonials__slider swiper" id="testimonialsSlider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <blockquote class="testimonial-card glass-card">
+                            <div class="testimonial-card__rating">★★★★★</div>
+                            <p>"Ayşe Hanım'ın eli mucizevi! Cildim 10 yıl gençleşti. Her seansta prenses gibi
+                                hissediyorum."</p>
+                            <div class="testimonial-card__author">
+                                <img src="images/musteri_1_1768504733065.png" alt="Zeynep K." loading="lazy">
+                                <div>
+                                    <cite>Zeynep K.</cite>
+                                    <span>Cilt Bakımı</span>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <div class="swiper-slide">
+                        <blockquote class="testimonial-card glass-card">
+                            <div class="testimonial-card__rating">★★★★★</div>
+                            <p>"Mehmet Bey sayesinde saçlarım hiç olmadığı kadar sağlıklı. Profesyonel yaklaşım!"</p>
+                            <div class="testimonial-card__author">
+                                <img src="images/musteri_2_1768504748221.png" alt="Ahmet Y." loading="lazy">
+                                <div>
+                                    <cite>Ahmet Y.</cite>
+                                    <span>Saç Bakımı</span>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <div class="swiper-slide">
+                        <blockquote class="testimonial-card glass-card">
+                            <div class="testimonial-card__rating">★★★★★</div>
+                            <p>"Düğünüm için geldim, harika deneyimdi! Makyaj ve saç mükemmeldi, fotoğraflar muhteşem
+                                çıktı!"</p>
+                            <div class="testimonial-card__author">
+                                <img src="images/musteri_3_1768504762030.png" alt="Selin M." loading="lazy">
+                                <div>
+                                    <cite>Selin M.</cite>
+                                    <span>Gelin Paketi</span>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <div class="swiper-slide">
+                        <blockquote class="testimonial-card glass-card">
+                            <div class="testimonial-card__rating">★★★★★</div>
+                            <p>"Zeynep Hanım'ın masajı stresten kurtulmamı sağladı. Kendimi yeniden doğmuş gibi
+                                hissettim!"</p>
+                            <div class="testimonial-card__author">
+                                <img src="images/musteri_4_1768504778229.png" alt="Fatma H." loading="lazy">
+                                <div>
+                                    <cite>Fatma H.</cite>
+                                    <span>Masaj Terapisi</span>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="testimonials__trust">
+                <div class="trust-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg><span>4.9/5 Google</span></div>
+                <div class="trust-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                    </svg><span>150+ Yorum</span></div>
+                <div class="trust-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg><span>%95 Memnuniyet</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <header class="section__header">
+                <span class="section__label reveal-fade">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="1" x2="12" y2="23" />
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                    </svg>
+                    Fiyatlandırma
+                </span>
+                <h2 class="section__title split-text">Şeffaf <span class="highlight">Fiyatlar</span></h2>
+            </header>
+
+            <div class="pricing__grid">
+                <article class="pricing-card glass-card" data-tilt data-tilt-scale="1.02">
+                    <div class="pricing-card__header">
+                        <h3>Başlangıç</h3>
+                        <p>İlk deneyim için ideal</p>
+                    </div>
+                    <div class="pricing-card__price">
+                        <span class="currency">₺</span>
+                        <span class="amount">1.200</span>
+                    </div>
+                    <ul class="pricing-card__features">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Cilt Analizi</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Temel Cilt Bakımı</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Maske Uygulaması</li>
+                        <li class="disabled"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 6L6 18M6 6l12 12" />
+                            </svg> Masaj</li>
+                        <li class="disabled"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 6L6 18M6 6l12 12" />
+                            </svg> VIP Oda</li>
+                    </ul>
+                    <a href="#booking" class="pricing-card__cta magnetic-btn">Seç</a>
+                </article>
+
+                <article class="pricing-card pricing-card--featured glass-card" data-tilt data-tilt-scale="1.02">
+                    <div class="pricing-card__badge">En Popüler</div>
+                    <div class="pricing-card__header">
+                        <h3>VIP Paket</h3>
+                        <p>Tam lüks deneyim</p>
+                    </div>
+                    <div class="pricing-card__price">
+                        <span class="currency">₺</span>
+                        <span class="amount">4.500</span>
+                        <span class="original">₺6.000</span>
+                    </div>
+                    <ul class="pricing-card__features">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Cilt Analizi</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Hydrafacial Bakım</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Aromaterapi Masajı</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Manikür & Pedikür</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> VIP Oda & İkramlar</li>
+                    </ul>
+                    <a href="#booking" class="pricing-card__cta magnetic-btn">Seç</a>
+                    <p class="pricing-card__savings">%25 Tasarruf!</p>
+                </article>
+
+                <article class="pricing-card glass-card" data-tilt data-tilt-scale="1.02">
+                    <div class="pricing-card__header">
+                        <h3>Gelin Paketi</h3>
+                        <p>Özel gününüz için</p>
+                    </div>
+                    <div class="pricing-card__price">
+                        <span class="currency">₺</span>
+                        <span class="amount">8.000</span>
+                    </div>
+                    <ul class="pricing-card__features">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Cilt Hazırlığı (3 Seans)</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Gelin Makyajı</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Gelin Saçı</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Manikür & Pedikür</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Kına Gecesi Makyajı</li>
+                    </ul>
+                    <a href="#booking" class="pricing-card__cta magnetic-btn">Seç</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="section booking" id="booking">
+        <div class="container">
+            <header class="section__header">
+                <span class="section__label reveal-fade">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                    Online Randevu
+                </span>
+                <h2 class="section__title split-text">Hemen <span class="highlight">Randevu Alın</span></h2>
+                <p class="booking__urgency">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                    </svg>
+                    Bugün için sadece <span id="slotsLeft">3</span> slot kaldı!
+                </p>
+            </header>
+
+            <div class="booking__widget glass-card">
+                <div class="booking__steps">
+                    <button class="booking-step active" data-step="1"><span>1</span><span>Hizmet</span></button>
+                    <button class="booking-step" data-step="2"><span>2</span><span>Tarih</span></button>
+                    <button class="booking-step" data-step="3"><span>3</span><span>Bilgiler</span></button>
+                    <button class="booking-step" data-step="4"><span>4</span><span>Onay</span></button>
+                </div>
+
+                <form id="bookingForm" class="booking__form">
+                    <fieldset class="booking__panel active" data-step="1">
+                        <legend>Hizmetinizi Seçin</legend>
+                        <div class="service-options">
+                            <label class="service-option"><input type="radio" name="service" value="cilt"
+                                    data-price="1500">
+                                <div class="option-content"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5">
+                                        <circle cx="12" cy="12" r="10" />
+                                    </svg>
+                                    <div>
+                                        <h4>Cilt Bakımı</h4><span>₺1.500 • 90 dk</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="service-option"><input type="radio" name="service" value="sac"
+                                    data-price="800">
+                                <div class="option-content"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5">
+                                        <path d="M6 2v20M18 2v20" />
+                                    </svg>
+                                    <div>
+                                        <h4>Saç Bakımı</h4><span>₺800 • 90 dk</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="service-option"><input type="radio" name="service" value="masaj"
+                                    data-price="900">
+                                <div class="option-content"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5">
+                                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                                    </svg>
+                                    <div>
+                                        <h4>Masaj Terapisi</h4><span>₺900 • 60 dk</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="service-option"><input type="radio" name="service" value="manikur"
+                                    data-price="400">
+                                <div class="option-content"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5">
+                                        <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                                    </svg>
+                                    <div>
+                                        <h4>Manikür & Pedikür</h4><span>₺400 • 60 dk</span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="booking__panel" data-step="2">
+                        <legend>Tarih ve Saat Seçin</legend>
+                        <div class="calendar-wrapper">
+                            <div class="calendar-nav"><button type="button" class="prev">‹</button><span
+                                    class="month-year"></span><button type="button" class="next">›</button></div>
+                            <div class="calendar-grid" id="calendarGrid"></div>
+                        </div>
+                        <div class="time-slots">
+                            <h4>Müsait Saatler</h4>
+                            <div id="timeSlots">
+                                <p>Lütfen önce tarih seçin</p>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="booking__panel" data-step="3">
+                        <legend>Kişisel Bilgiler</legend>
+                        <div class="form-grid">
+                            <div class="form-group"><label for="customerName">Ad Soyad *</label><input type="text"
+                                    id="customerName" name="name" required autocomplete="name"></div>
+                            <div class="form-group"><label for="customerPhone">Telefon *</label><input type="tel"
+                                    id="customerPhone" name="phone" required autocomplete="tel"
+                                    placeholder="05XX XXX XX XX"></div>
+                            <div class="form-group full"><label for="customerEmail">E-posta</label><input type="email"
+                                    id="customerEmail" name="email" autocomplete="email"></div>
+                            <div class="form-group full"><label for="customerNotes">Notlar</label><textarea
+                                    id="customerNotes" name="notes" rows="3"></textarea></div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="booking__panel" data-step="4">
+                        <legend>Randevu Onayı</legend>
+                        <div class="booking-summary">
+                            <div class="summary-row"><span>Hizmet:</span><span id="summaryService">-</span></div>
+                            <div class="summary-row"><span>Tarih:</span><span id="summaryDate">-</span></div>
+                            <div class="summary-row"><span>Saat:</span><span id="summaryTime">-</span></div>
+                            <div class="summary-row"><span>Ad Soyad:</span><span id="summaryName">-</span></div>
+                            <div class="summary-row"><span>Telefon:</span><span id="summaryPhone">-</span></div>
+                            <div class="summary-row total"><span>Toplam:</span><span id="summaryPrice">-</span></div>
+                        </div>
+                        <label class="checkbox-label"><input type="checkbox" name="terms" required><span>Hizmet
+                                şartlarını ve gizlilik politikasını kabul ediyorum</span></label>
+                    </fieldset>
+
+                    <div class="booking__actions">
+                        <button type="button" class="btn btn--ghost" id="prevStep" disabled>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M19 12H5M12 19l-7-7 7-7" />
+                            </svg>
+                            <span>Geri</span>
+                        </button>
+                        <button type="button" class="btn btn--primary" id="nextStep">
+                            <span>İleri</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                        <button type="submit" class="btn btn--primary" id="submitBooking" style="display:none;">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>Randevuyu Onayla</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="booking__trust">
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                    </svg> SSL Güvenli</span>
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72" />
+                    </svg> 0212 345 67 89</span>
+                <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="1" x2="12" y2="23" />
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                    </svg> Para İadesi Garantisi</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__grid">
+                    <div class="footer__brand">
+                        <a href="#" class="footer__logo">
+                            <svg viewBox="0 0 140 40" class="logo-svg">
+                                <defs>
+                                    <linearGradient id="footerLogoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#D4AF37" />
+                                        <stop offset="50%" stop-color="#F4D03F" />
+                                        <stop offset="100%" stop-color="#D4AF37" />
+                                    </linearGradient>
+                                </defs><text x="0" y="28" fill="url(#footerLogoGrad)" class="logo-text-svg">LUXE
+                                    SPA</text>
+                            </svg>
+                        </a>
+                        <p>İstanbul'un kalbinde lüks güzellik ve wellness deneyimi. 7 yıldır müşterilerimize en iyi
+                            hizmeti sunuyoruz.</p>
+                        <div class="footer__social">
+                            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" />
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                </svg></a>
+                            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                </svg></a>
+                            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="footer__links">
+                        <h4>Hızlı Linkler</h4>
+                        <ul>
+                            <li><a href="#services">Hizmetler</a></li>
+                            <li><a href="#team">Ekibimiz</a></li>
+                            <li><a href="#pricing">Fiyatlar</a></li>
+                            <li><a href="#booking">Randevu</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__links">
+                        <h4>Hizmetlerimiz</h4>
+                        <ul>
+                            <li><a href="#services">Cilt Bakımı</a></li>
+                            <li><a href="#services">Saç Bakımı</a></li>
+                            <li><a href="#services">Masaj Terapisi</a></li>
+                            <li><a href="#services">Lazer Epilasyon</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__contact">
+                        <h4>İletişim</h4>
+                        <ul>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg> Nişantaşı, Teşvikiye Cad. No:45, Şişli/İstanbul</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72" />
+                                </svg> <a href="tel:+902123456789">0212 345 67 89</a></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg> <a href="mailto:info@luxespa.com.tr">info@luxespa.com.tr</a></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg> Pzt-Cmt: 09:00 - 21:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 Lüks Güzellik Merkezi. Tüm hakları saklıdır.</p>
+                <div class="footer__legal">
+                    <a href="#">Gizlilik Politikası</a>
+                    <a href="#">Kullanım Koşulları</a>
+                    <a href="#">KVKK</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTAs -->
+    <a href="#booking" class="floating-cta" aria-label="Randevu Al">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+        </svg>
+        <span>Randevu</span>
+    </a>
+
+    <a href="https://wa.me/902123456789?text=Merhaba,%20randevu%20almak%20istiyorum" class="whatsapp-cta"
+        target="_blank" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <!-- Scripts -->
+    <script src="libs/gsap.min.js"></script>
+    <script src="libs/ScrollTrigger.min.js"></script>
+    <script src="libs/lenis.min.js"></script>
+    <script src="libs/swiper.min.js"></script>
+    <script src="scripts/premium.js"></script>
+</body>
+
+</html>
